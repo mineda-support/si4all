@@ -1,0 +1,16 @@
+* Netlist before simplification
+
+* cell TOP
+.SUBCKT TOP
+* net 16 BULK
+* device instance $1 r0 *1 4.785,3.43 RES
+R$1 2 1 7650 RES
+* device instance $2 r0 *1 0.945,1.25 HVPMOS
+M$2 4 12 3 7 HVPMOS L=0.25U W=1.5U AS=0.63P AD=0.63P PS=3.84U PD=3.84U
+* device instance $3 r0 *1 0.945,4.65 LVPMOS
+M$3 6 14 5 7 LVPMOS L=0.25U W=1.5U AS=0.63P AD=0.63P PS=3.84U PD=3.84U
+* device instance $4 r0 *1 3.345,4.65 LVNMOS
+M$4 11 15 10 16 LVNMOS L=0.25U W=1.5U AS=0.63P AD=0.63P PS=3.84U PD=3.84U
+* device instance $5 r0 *1 3.345,1.25 HVNMOS
+M$5 9 13 8 16 HVNMOS L=0.25U W=1.5U AS=0.63P AD=0.63P PS=3.84U PD=3.84U
+.ENDS TOP
